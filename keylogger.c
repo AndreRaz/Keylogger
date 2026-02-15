@@ -35,7 +35,7 @@ void encontrar_teclado(char *ruta_final) {
             ruta_final[i] = '\0'; // Cerramos el string
             
             fclose(fp);
-            return; // ¡Éxito! Salimos de la función inmediatamente
+            return; 
         }
         
         // 3. Si encontramos una línea vacía (separador de bloques), reseteamos la bandera
@@ -95,10 +95,10 @@ int main(int argc, char *argv[]) {
 
         if (ev.type == EV_KEY && ev.value == 1) {
             if(ev.code >= 2 && ev.code <= 10){
-                 // Imprime números del 1 al 9
-                printf("Tecla: %d\n", ev.code + 2 - 1); // Ajustamos el código para que muestre números del 1 al 9
+                 
+                printf("Tecla: %d\n", ev.code + 2 - 1); 
             } else if (ev.code == 11) {
-                printf("Tecla: 0\n"); // El código 11 corresponde al 0
+                printf("Tecla: 0\n"); 
             } 
         }
     }
