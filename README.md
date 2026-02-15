@@ -1,4 +1,4 @@
-# ⌨️ Linux Kernel Keylogger (C)
+# Linux Kernel Keylogger (C)
 
 Un **Keylogger simple y educativo** escrito en C para sistemas Linux. Este programa interactúa directamente con el subsistema de entrada del kernel de Linux (`/dev/input/`) para capturar y decodificar eventos de teclado en tiempo real.
 
